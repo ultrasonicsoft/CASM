@@ -1,5 +1,8 @@
 package org.casm.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 /**
@@ -7,13 +10,11 @@ import java.util.List;
  */
 public class ProductCatalogue {
 
+    @JsonProperty("products")
     private List<Product> products;
 
+    @JsonCreator
     public ProductCatalogue(List<Product> products) {
         this.products = products;
-    }
-
-    public List<Product> getProducts() {
-        return products;
     }
 }

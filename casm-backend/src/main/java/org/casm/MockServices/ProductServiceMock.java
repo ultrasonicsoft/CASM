@@ -3,6 +3,8 @@ package org.casm.MockServices;
 import org.casm.contracts.ProductService;
 import org.casm.domain.Product;
 import org.casm.domain.ProductCatalogue;
+import org.casm.domain.enums.CrateType;
+import org.casm.domain.enums.Packaging;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -20,9 +22,10 @@ public class ProductServiceMock implements ProductService{
     @Override
     public ProductCatalogue getAllProducts() {
         List<Product> products = new ArrayList<>();
-        products.add(new Product("Coke", 100, 90));
-        products.add(new Product("Sprite", 100, 90));
-        products.add(new Product("Limca", 100, 90));
+        products.add(new Product("Coke", 100, 90, Packaging.GLASS_BOTTLE, CrateType.PLASTIC, true));
+        products.add(new Product("Limca", 200, 90, Packaging.GLASS_BOTTLE, CrateType.PLASTIC, false));
+        products.add(new Product("Sprite", 300, 90, Packaging.GLASS_BOTTLE, CrateType.PLASTIC, false));
+
         return new ProductCatalogue(products);
     }
 }
