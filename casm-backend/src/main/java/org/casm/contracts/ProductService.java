@@ -1,6 +1,6 @@
 package org.casm.contracts;
 
-import org.casm.domain.ProductCatalogue;
+import org.casm.domain.product.ProductCatalogue;
 import org.springframework.stereotype.Service;
 
 /**

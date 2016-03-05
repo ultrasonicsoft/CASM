@@ -1,7 +1,7 @@
 package org.casm.controllers;
 
 import org.casm.contracts.ProductService;
-import org.casm.domain.ProductCatalogue;
+import org.casm.domain.product.ProductCatalogue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;

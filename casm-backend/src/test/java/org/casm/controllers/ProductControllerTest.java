@@ -1,8 +1,8 @@
 package org.casm.controllers;
 
 import org.casm.contracts.ProductService;
-import org.casm.domain.Product;
-import org.casm.domain.ProductCatalogue;
+import org.casm.domain.product.Product;
+import org.casm.domain.product.ProductCatalogue;
 import org.casm.domain.enums.CrateType;
 import org.casm.domain.enums.Packaging;
 import org.junit.Before;
@@ -11,7 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.ArrayList;

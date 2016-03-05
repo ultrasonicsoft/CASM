@@ -1,8 +1,8 @@
 package org.casm.MockServices;
 
 import org.casm.contracts.ProductService;
-import org.casm.domain.Product;
-import org.casm.domain.ProductCatalogue;
+import org.casm.domain.product.Product;
+import org.casm.domain.product.ProductCatalogue;
 import org.casm.domain.enums.CrateType;
 import org.casm.domain.enums.Packaging;
 import org.springframework.beans.factory.annotation.Qualifier;
