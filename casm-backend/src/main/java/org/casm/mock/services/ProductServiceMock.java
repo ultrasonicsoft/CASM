@@ -1,4 +1,4 @@
-package org.casm.MockServices;
+package org.casm.mock.services;
 
 import org.casm.contracts.ProductService;
 import org.casm.domain.product.Product;
